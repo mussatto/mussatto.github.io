@@ -1,0 +1,40 @@
+<header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            {% for page in site.pages %}
+              {% if page.title %}
+              <span class="icon-bar"></span>
+              {% endif %}
+            {% endfor %}           
+            
+          </button>
+          <a class="navbar-brand" href="/">{{ site.title }}</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+
+            {% for page in site.pages %}
+              {% if page.title %}
+              <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+              {% endif %}
+            {% endfor %}
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+      
+
+  </div>
+
+</header>

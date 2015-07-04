@@ -1,0 +1,11 @@
+# Site settings
+title: Vitor Mussatto's blog
+email: 
+description: Dev Blog
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://mussatto.github.io" # the base hostname & protocol for your site
+twitter_username: vitormussatto
+github_username:  mussatto
+
+# Build settings
+markdown: kramdown

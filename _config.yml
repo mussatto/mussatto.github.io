@@ -9,3 +9,4 @@ github_username:  mussatto
 
 # Build settings
 markdown: kramdown
+paginate: 5

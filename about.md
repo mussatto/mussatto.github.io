@@ -15,5 +15,6 @@ Written by a brazilian software engineer, generating content about development m
 
 Some Projects:
 
-[https://emessage-m.appspot.com/] (https://emessage-m.appspot.com/)
-[http://www.you24h.com] (http://www.you24h.com)
+[https://emessage-m.appspot.com/](https://emessage-m.appspot.com/)
+
+[http://www.you24h.com](http://www.you24h.com)

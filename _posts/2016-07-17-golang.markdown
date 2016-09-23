@@ -1,0 +1,25 @@
+---
+layout: post
+title:  "GoLanguage First Impressions"
+date:   2016-07-17 14:21:34
+categories: golang
+---
+
+I have been working for a couple of months with golang and decided to create a post about my experience.
+
+My background: I have more experience with Java, and I usually created some ruby and scala scripts to help me automatize tasks.
+
+
+My considerations:
+
+-  Golang is not object oriented.
+-  Golang has pointers
+-  Golang has functional capabilities
+-  Golang does not directly provide means for inheritance (not OO), you should use composition
+-  Golang is maintained by google =)
+-  Golang is FAST
+-  Golang error handling is (or can be) really verbose
+-  Golang is compiled
+-  Golang is strong typed
+
+I took me a while to get productive with the language, and I was only able to feel how productive it can be after I changed back to Java for a while: suddenly Java felt *really* slow.

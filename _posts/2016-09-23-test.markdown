@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "GoLang - Testing"
+date:   2016-09-22 14:21:34
+categories: golang
+---
+
+If we want to test the file:
+
+foo.go:
+{% highlight go %}
+package main
+
+func PrintSum(a, b int){
+  fmt.Printf("%v\n", a+b)
+}
+{% endhighlight %}
+
+We need to create a new file, in the same package labeled:
+
+foo_test.go
+
+Then inside it, we create a function:
+{% highlight go %}
+
+func TestPrintSum(t *testing.T){
+  PrintSum(1,2)
+}
+
+{% endhighlight %}

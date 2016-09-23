@@ -1,6 +1,6 @@
 # Site settings
 title: Vitor Mussatto's blog
-email: 
+email:
 description: Dev Blog
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://mussatto.github.io" # the base hostname & protocol for your site
@@ -10,3 +10,4 @@ github_username:  mussatto
 # Build settings
 markdown: kramdown
 paginate: 5
+gems: [jekyll-paginate,jekyll-coffeescript, jekyll-watch, jekyll-assets]

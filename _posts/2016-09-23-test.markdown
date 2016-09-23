@@ -5,7 +5,7 @@ date:   2016-09-22 14:21:34
 categories: golang
 ---
 
-If we want to test the file:
+If we want to test a go file:
 
 foo.go:
 {% highlight go %}
@@ -28,3 +28,11 @@ func TestPrintSum(t *testing.T){
 }
 
 {% endhighlight %}
+
+Then open a shell and type:
+
+{% highlight shell %}
+$ go test
+{% endhighlight %}
+
+And you should be able to see the test output.

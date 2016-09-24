@@ -22,7 +22,7 @@ layout: default
     <div class="bs-component">
         <ul class="pagination">
             {% if paginator.previous_page %}
-            <li class="active"><a href="#">«</a></li>
+            <li class="active"><a href="{{paginator.previous_page_path}}">«</a></li>
             {% else %}
             <li class="disabled"><a href="#">«</a></li>
             {% endif %}
@@ -40,7 +40,7 @@ layout: default
             {% endfor %}
 
             {% if paginator.next_page %}
-            <li><a href="#">»</a></li>
+            <li><a href="{{paginator.next_page_path}}">»</a></li>
             {% else %}
             <li class="disabled"><a href="#">»</a></li>
             {% endif %}

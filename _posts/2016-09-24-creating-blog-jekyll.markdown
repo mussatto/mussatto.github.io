@@ -4,10 +4,13 @@ title:  "Creating a blog on github pages with Jekyll"
 date:   2016-09-24 00:00:00
 categories: jekyll blog
 ---
-
+#### WAT?
 I am creating this post to describe how I setup the local environment for developing a blog in Jekyll + github pages.
 
-On github - create a repository in the pattern: YOURUSERNAME.github.io (change YOURUSERNAME with your username in github)
+#### On github:
+
+
+Create a repository in the pattern: YOURUSERNAME.github.io (change YOURUSERNAME with your username in github)
 
 Install [rbenv](https://github.com/rbenv/rbenv)
 
@@ -19,20 +22,20 @@ $ source ~/.bashrc
 $ rbenv install 2.3.1
 {% endhighlight %}
 
-Then test your ruby installation:
+#### Then test your ruby installation:
 
 {% highlight shell %}
 $ ruby --version
 ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-linux]
 {% endhighlight %}
 
-Install the Jekyll gem:
+#### Install the Jekyll gem:
 
 {% highlight shell %}
 $ gem install jekyll
 {% endhighlight %}
 
-Create a new site with Jekyll, and add git stuff:
+#### Create a new site with Jekyll, and add git stuff:
 
 {% highlight shell %}
 $ jekyll new YOURUSERNAME.github.io

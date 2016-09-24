@@ -1,7 +1,7 @@
 # Site settings
-title: Vitor Mussatto's blog
-email:
-description: Dev Blog
+title: Vitor Mussatto blog
+email: mussatto@gmail.com
+description: A software development blog about java, golang and development with tutorials. Written by Vitor Mussatto
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://mussatto.github.io" # the base hostname & protocol for your site
 twitter_username: vitormussatto

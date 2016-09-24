@@ -4,4 +4,4 @@ title: Skills
 permalink: /skills/
 ---
 
-Skills
+XP bar

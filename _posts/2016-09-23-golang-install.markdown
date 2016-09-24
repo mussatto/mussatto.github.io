@@ -5,9 +5,7 @@ date:   2016-09-22 11:10:00
 categories: golang
 ---
 
-In order to install GoLang in Ubuntu, go to the url: https://golang.org/dl/
-
-And download the tar for Linux:
+In order to install GoLang in Ubuntu, go to this [url](https://golang.org/dl/), download the tar for Linux:
 
 {% highlight shell %}
 wget https://storage.googleapis.com/golang/go1.7.1.linux-amd64.tar.gz

@@ -13,6 +13,8 @@ The idea is: an animal, and a Dog that behaves as an animal.
 
 ### The interface
 
+Here, we are defining which functions are required to a type to work as a Animal:
+
 {% highlight go %}
 
 package abstraction
@@ -26,6 +28,8 @@ type Animal interface {
 {% endhighlight %}
 
 ### The Dog
+
+In order to Dog to work as an Animal, the only thing you have to do is have the function with the same name (Talk), with the same parameters:
 
 {% highlight go %}
 
@@ -41,6 +45,8 @@ func (dog Dog) Talk() string{
 
 ### The Cat
 
+The same for a cat:
+
 {% highlight go %}
 
 type Cat struct{
@@ -54,6 +60,8 @@ func (cat Cat) Talk() string{
 {% endhighlight %}
 
 ### The test
+
+Lets instantiate a lot of Dogs and Cats, and see if Go allows us to use Dogs and Cats as animals:
 
 {% highlight go %}
 

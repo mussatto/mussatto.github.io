@@ -9,7 +9,6 @@ I am creating this post to describe how I setup the local environment for develo
 
 #### On github:
 
-
 Create a repository in the pattern: YOURUSERNAME.github.io (change YOURUSERNAME with your username in github)
 
 Install [rbenv](https://github.com/rbenv/rbenv)

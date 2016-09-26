@@ -9,11 +9,13 @@ If we want to test a go file:
 
 foo.go:
 {% highlight go %}
+
 package main
 
 func PrintSum(a, b int){
   fmt.Printf("%v\n", a+b)
 }
+
 {% endhighlight %}
 
 We need to create a new file, in the same package labeled:

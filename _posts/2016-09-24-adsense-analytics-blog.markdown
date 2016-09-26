@@ -1,15 +1,16 @@
 ---
 layout: post
-title:  "Adding google stuff"
+title:  "Analytics, adsense in the blog"
 date:   2016-09-25 14:21:34
 categories: google analytics SEO
 ---
 
-#### WAT?
+### WAT?
 
-In this post I will describe how I setup google analytics, google adsense and search.
+In this post I will describe how I setup google analytics, google adsense and search in this blog.
 
-#### Google Analytics
+
+### Google Analytics
 
 Google Analytics allows you to track who is acessing your website.
 
@@ -21,7 +22,8 @@ In my case, I pasted it right before the </body> tag
 
 After a couple of minutes you should be able to see that you have been confirmed, and google analytics will grab all the statistics about your website.
 
-#### Google Adsense
+
+### Google Adsense
 
 Google Adsense allows you to create ads / publicity in order to have monetization (money) when users click on it.
 
@@ -39,6 +41,4 @@ For the responsive ad, I will fill the whole size of the div.
 
 
 
-
 There is a sample code in [here](https://github.com/mussatto/mussatto.github.io/blob/master/_layouts/default.html), its the code I added to enable google stuff in this blog.
-

@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Golang Translate site"
+title:  "Google Translate site"
 date:   2016-09-30 00:00:00
-categories: golang channel programming
+categories: channel programming
 ---
 
 ### WAT?

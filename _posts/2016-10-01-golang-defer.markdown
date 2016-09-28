@@ -16,7 +16,6 @@ In this post I will describe how defer works with some sample code.
 
 ### The Code
 
-Mainly, the thing to be done is add a file .travis.yml in the root of the git repository:
 
 ### The Output
 

@@ -11,4 +11,4 @@ linkedin_page: vitormussatto
 # Build settings
 markdown: kramdown
 paginate: 5
-gems: [jekyll-paginate,jekyll-coffeescript, jekyll-watch, jekyll-assets]
+gems: [jekyll-paginate,jekyll-coffeescript, jekyll-watch, jekyll-assets,jekyll-sitemap]

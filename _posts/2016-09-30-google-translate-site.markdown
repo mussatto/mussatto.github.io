@@ -7,9 +7,7 @@ categories: channel programming
 
 ### WAT?
 
-In this post I will describe how Golang interfaces work.
-
-The idea is: an animal, and a Dog that behaves as an animal.
+In this post I will describe how I did the setup for the google translate in this blog.
 
 ### The setup
 

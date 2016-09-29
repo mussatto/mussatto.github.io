@@ -10,6 +10,7 @@ categories: golang defer
 In this post I will describe how defer works with some sample code.
 
 
+
 ### The example
 
 

@@ -9,15 +9,75 @@ categories: golang defer
 
 In this post I will describe how defer works with some sample code.
 
+Defer pretty much adds a command in a stack to be executed after a function call before it returns.
 
+The stack works in LIFO (last in first out)
 
 ### The example
 
+We will add two print to console commands in defer, just to see how the calls are handled.
+And then check it again in a loop.
+
+{% highlight go %}
+
+package golab
+
+import "fmt"
+
+//Defer1
+func defer1() {
+	defer fmt.Println("this is going to be printed after return")
+	defer fmt.Println("this is a second command in defer")
+
+	fmt.Println("this is A")
+	fmt.Println("this is B")
+}
+
+func defer2() {
+	//since its LIFO, should print 3210
+	for i := 0; i < 4; i++ {
+		defer fmt.Println(i)
+	}
+
+}
+
+{% endhighlight %}
 
 
-### The Code
+### The Test
+
+{% highlight go %}
+
+package golab
+
+import "testing"
+
+func TestDefer1(T *testing.T) {
+	defer1()
+}
+
+func TestDefer2(T *testing.T) {
+	defer2()
+}
+
+{% endhighlight %}
 
 
 ### The Output
 
+{% highlight go %}
+/home/mussatto/dev/go-1.7/bin/go test -v github.com/mussatto/golab/defer -run ^TestDefer1$
+this is A
+this is B
+this is a second command in defer
+this is going to be printed after return
+ok  	github.com/mussatto/golab/defer	0.001s
+{% endhighlight %}
+
+
+### The code
+[https://github.com/mussatto/golab/tree/master/defer](https://github.com/mussatto/golab/tree/master/defer)
+
 ### Helpful links
+
+[https://blog.golang.org/defer-panic-and-recover](https://blog.golang.org/defer-panic-and-recover)

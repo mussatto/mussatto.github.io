@@ -7,15 +7,16 @@ categories: golang defer
 
 ### WAT?
 
-In this post I will describe how defer works with some sample code.
+In this post I will describe how defer works with a small sample code.
+
+### The example
 
 Defer pretty much adds a command in a stack to be executed after a function call before it returns.
 
 The stack works in LIFO (last in first out)
 
-### The example
-
 We will add two print to console commands in defer, just to see how the calls are handled.
+
 And then check it again in a loop.
 
 {% highlight go %}

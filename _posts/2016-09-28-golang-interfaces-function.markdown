@@ -5,8 +5,6 @@ date:   2016-09-28 00:00:00
 categories: golang channel programming
 ---
 
-### WAT?
-
 In this post I will describe how to use type interface on function in Golang.
 
 The idea is to have a defined callback of function to be passed as parameter.

@@ -5,8 +5,6 @@ date:   2016-10-01 00:00:00
 categories: golang defer
 ---
 
-### WAT?
-
 In this post I will describe how defer works with a small sample code.
 
 ### The example

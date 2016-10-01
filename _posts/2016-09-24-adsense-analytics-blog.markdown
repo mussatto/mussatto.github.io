@@ -5,8 +5,6 @@ date:   2016-09-25 14:21:34
 categories: google analytics SEO
 ---
 
-### WAT?
-
 In this post I will describe how I setup google analytics, google adsense and search in this blog.
 
 

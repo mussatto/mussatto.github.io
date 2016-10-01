@@ -5,8 +5,6 @@ date:   2016-09-29 00:00:00
 categories: golang channel programming
 ---
 
-### WAT?
-
 In this post I will describe how to concatenate string in the "right" (performatic) way.
 
 The code will perform a loop that appends some information in the current string

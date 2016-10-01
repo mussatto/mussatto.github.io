@@ -4,9 +4,7 @@ title:  "Creating a blog on github pages with Jekyll"
 date:   2016-09-24 00:00:00
 categories: jekyll blog
 ---
-### WAT?
 I am creating this post to describe how I setup the local environment for developing a blog in Jekyll + github pages.
-
 
 ### On github:
 

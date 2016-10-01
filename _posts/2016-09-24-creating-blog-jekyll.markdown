@@ -60,3 +60,5 @@ $ git push origin master
 {% endhighlight %}
 
 With this, you should be able to see your site / blog in a browser by typing the url: [YOURUSERNAME.github.io](YOURUSERNAME.github.io)
+
+The content is republished every time you commit + push code.

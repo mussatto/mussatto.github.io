@@ -5,7 +5,7 @@ date:   2016-09-26 00:00:00
 categories: golang channel programming
 ---
 
-In this post I will describe how Golang interfaces work.
+In this post I will describe briefly how Golang interfaces work.
 
 The idea is: an animal, and a Dog that behaves as an animal.
 

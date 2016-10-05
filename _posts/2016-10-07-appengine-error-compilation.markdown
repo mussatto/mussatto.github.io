@@ -2,7 +2,7 @@
 layout: post
 title:  "Java - AppEngine Compilation error"
 date:   2016-10-07 00:00:00
-categories: spring springboot facebook social
+categories: appengine compilation error java
 ---
 
 I was playing with AppEngine, and studying for the getParameter vs getAttribute post.

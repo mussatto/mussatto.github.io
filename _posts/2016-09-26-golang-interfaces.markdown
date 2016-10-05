@@ -2,7 +2,7 @@
 layout: post
 title:  "Golang Interfaces"
 date:   2016-09-26 00:00:00
-categories: golang channel programming
+categories: golang interfaces programming
 ---
 
 In this post I will describe briefly how Golang interfaces work.

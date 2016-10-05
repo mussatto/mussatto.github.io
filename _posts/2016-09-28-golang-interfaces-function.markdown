@@ -2,7 +2,7 @@
 layout: post
 title:  "Golang Interface - Function"
 date:   2016-09-28 00:00:00
-categories: golang channel programming
+categories: golang interface function programming
 ---
 
 In this post I will describe how to use type interface on function in Golang.

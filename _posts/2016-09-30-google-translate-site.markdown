@@ -2,7 +2,7 @@
 layout: post
 title:  "Google Translate site"
 date:   2016-09-30 00:00:00
-categories: channel programming
+categories: google translate site jekyll
 ---
 
 In this post I will describe how I did the setup for the google translate in this blog.

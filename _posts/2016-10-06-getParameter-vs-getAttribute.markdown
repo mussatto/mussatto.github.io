@@ -2,7 +2,7 @@
 layout: post
 title:  "Java - getParameter vs getAttribute"
 date:   2016-10-06 00:00:00
-categories: spring springboot facebook social
+categories: getParameter getAttribute java jsp servlet
 ---
 
 In this post I will write a little bit about the difference between getParameter vs getAttribute in javax.servlet.http.HttpServletRequest in Java.

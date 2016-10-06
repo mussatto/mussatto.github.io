@@ -5,7 +5,7 @@ date:   2015-07-05 23:20:00
 categories: GAE java coding
 ---
 
-I am using gradle + junit, and it took me a while to find the right libraries and documentation when testing the persitence, so I am writing this down in case this helps someone.
+I am using appengine + gradle + junit, and it took me a while to find the right libraries and documentation when testing the persitence, so I am writing this down in case this helps someone.
 
 On gradle, the required libs are:
 
@@ -22,20 +22,20 @@ A sample test:
 
 {% highlight java %}
 public class DAOTest {
-  
+
   private final LocalServiceTestHelper helper =
           new LocalServiceTestHelper(new LocalDatastoreServiceTestConfig());
-  
+
   @Before
   public void setUp() {
     helper.setUp();
   }
-  
+
   @After
   public void tearDown(){
     helper.tearDown();
   }
-  
+
   @Test
   public void testPersistence(){
     Key prayerKey = KeyFactory.createKey("MyEntity", "key");
@@ -47,5 +47,3 @@ public class DAOTest {
 }
 
 {% endhighlight %}
-
-

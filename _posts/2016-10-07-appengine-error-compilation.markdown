@@ -63,10 +63,10 @@ Then I am able to run:
 
 {% endhighlight %}
 
-Then you should be able to start appengine in development mode.
+No errors should occur.
 
 
-### Full Stacktrace of the error I got with jdk 8:
+### (for reference) Full Stacktrace of the error in jdk 8:
 
 {% highlight shell %}
 

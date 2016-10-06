@@ -5,7 +5,7 @@ date:   2016-09-22 14:21:34
 categories: golang test
 ---
 
-In order to cover some basic feature of golang, in this post I will provide a sample of how to write golang tests.
+In order to cover some basic features of golang, in this post I will provide a sample of how to write golang tests.
 
 If we want to test a go file:
 

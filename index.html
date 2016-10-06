@@ -2,24 +2,17 @@
 layout: default
 ---
 <div class="home">
-
         {% for post in paginator.posts %}
         <div class="row panel panel-default panel-body">
             <div class="col-lg-2">
-                <h6>
-                    {{ post.date | date: "%b %-d, %Y" }}
-                </h6>
+                <h6>{{ post.date | date: "%b %-d, %Y" }}</h6>
             </div>
             <div class="col-lg-8">
-                <h2>
-                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                </h2>
+                <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
                 <span>{{ post.content | strip_html | truncatewords:75}}</span>
             </div>
         </div>
         {% endfor %}
-
-
     <div class="bs-component">
         <ul class="pagination">
             {% if paginator.previous_page %}
@@ -27,9 +20,7 @@ layout: default
             {% else %}
             <li class="disabled"><a href="#">«</a></li>
             {% endif %}
-
             {% for page in (1..paginator.total_pages) %}
-
             {% if paginator.page == page %}
             <li class="active"><a href="#">{{ page }}</a></li>
             {% elsif page == 1 %}
@@ -37,16 +28,14 @@ layout: default
             {% else %}
             <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
             {% endif %}
-
             {% endfor %}
-
             {% if paginator.next_page %}
             <li><a href="{{paginator.next_page_path}}">»</a></li>
             {% else %}
             <li class="disabled"><a href="#">»</a></li>
             {% endif %}
-
         </ul>
+    </div>
 
     </div>
 </div>

@@ -7,9 +7,9 @@ categories: golang interfaces programming
 
 In this post I will describe briefly how Golang interfaces work.
 
-The idea is: an animal, and a Dog that behaves as an animal.
-
 ### The interface
+
+The main idea we for this sample is: an animal, a Dog and a Cat that behaves as an animal.
 
 Here, we are defining which functions are required to a type to work as a Animal:
 
@@ -59,7 +59,7 @@ func (cat Cat) Talk() string{
 
 ### The test
 
-Lets instantiate a lot of Dogs and Cats, and see if Go allows us to use Dogs and Cats as animals:
+Lets instantiate a lot of Dogs and Cats, and see if Go allows us to use Dogs and Cats as Animal:
 
 {% highlight go %}
 

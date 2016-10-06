@@ -9,7 +9,6 @@ I have been working for a couple of months with golang and decided to create a p
 
 My background: I have more experience with Java, and I usually created some ruby and scala scripts to help me automatize tasks.
 
-
 My considerations:
 
 -  Golang is not object oriented.

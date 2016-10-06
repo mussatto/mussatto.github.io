@@ -5,9 +5,9 @@ date:   2016-09-29 00:00:00
 categories: golang channel programming
 ---
 
-In this post I will describe how to concatenate string in the "right" (performatic) way.
+In this post I will describe how to concatenate string in the right / more performatic way.
 
-The code will perform a loop that appends some information in the current string
+The code will perform a long loop that appends some information in the current string
 
 ### The Setup
 

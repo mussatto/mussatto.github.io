@@ -5,7 +5,7 @@ date:   2016-09-30 00:00:00
 categories: golang travis
 ---
 
-In this post I will describe how to setup Travis CI with GoLang on a github project.
+In this post I will describe briefly how to setup Travis CI with GoLang on a github project.
 
 ### The setup
 

@@ -33,7 +33,7 @@ public ServletRegistrationBean h2servletRegistration() {
 
 {% endhighlight %}
 
-Then the database's connection URI and login information:
+Then the database's connection URI and login information in application.properties:
 
 {% highlight properties %}
 

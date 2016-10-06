@@ -5,7 +5,7 @@ date:   2016-10-03 00:00:00
 categories: spring springboot facebook login auth
 ---
 
-In this post how to get user info when using OAuth2 as authentication in the website.
+In this post I will describe how to get user info from the SpringSecurityCore context when using OAuth2 as authentication in the website.
 
 ### Setup
 

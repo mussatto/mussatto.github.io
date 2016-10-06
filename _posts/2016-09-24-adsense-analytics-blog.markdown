@@ -5,7 +5,7 @@ date:   2016-09-25 14:21:34
 categories: google analytics SEO
 ---
 
-In this post I will describe how I setup google analytics, google adsense and search in this blog (jekyll).
+In this post I will describe how I setup google analytics, google adsense and search in this jekyll blog.
 
 
 ### Google Analytics

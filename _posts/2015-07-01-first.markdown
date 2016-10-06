@@ -10,7 +10,4 @@ So far, its a great tool for developers to create blog, and mantain control in t
 
 I will try to customize the page layout later, and write a little bit about my considerations.
 
-
-In this line i can create a link to my [blog][mussatto.github.io] 
-
 [mussatto.github.io]:      http://mussatto.github.io/

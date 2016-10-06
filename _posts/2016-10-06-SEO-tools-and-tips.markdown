@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "SEO Tools and tips"
-date:   2016-10-07 00:00:00
+date:   2016-10-06 00:00:00
 categories: SEO google tools
 ---
 
@@ -11,7 +11,7 @@ Its a tutorial / brief list is to make the desired website be more likely to app
 
 ### Google Search Console
 
-Register and add your site in the tool. This provides useful information about how many clicks and keywords are being used to send data to your website.
+Register and add your site in the console. This provides useful information about how many clicks and keywords are being used to send data to your website.
 
 [https://www.google.com/webmasters/](https://www.google.com/webmasters/)
 
@@ -99,3 +99,9 @@ This is probably the most difficult step: its an never ending effort, that requi
 With more existing content in your website, its more likely to get users more often, and make them return.
 
 Remember to pay extra attention to your title, keywords and content. Its good to have the same words of the title in the content. No one likes clickbaiters, especially google.
+
+### The code
+
+Check this blog's source code if you want to compare things, and contact me if you have a new tip!
+
+[https://github.com/mussatto/mussatto.github.io](https://github.com/mussatto/mussatto.github.io)

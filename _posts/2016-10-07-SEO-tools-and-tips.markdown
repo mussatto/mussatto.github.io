@@ -21,7 +21,7 @@ Adsense is the most standard tool to generate revenue in websites. At least for 
 
 Its not an SEO tool / topic, but google seems to like when google ads appear in your site.
 
-https://www.google.com/adsense/app
+[https://www.google.com/adsense/app](https://www.google.com/adsense/app)
 
 ### Load Javascript "later"
 
@@ -105,3 +105,13 @@ Remember to pay extra attention to your title, keywords and content. Its good to
 Check this blog's source code if you want to compare things, and contact me if you have a new tip!
 
 [https://github.com/mussatto/mussatto.github.io](https://github.com/mussatto/mussatto.github.io)
+
+### Helpful links
+
+[https://support.google.com/webmasters/](https://support.google.com/webmasters/)
+
+[Google SEO starter guide](https://static.googleusercontent.com/media/www.google.com/pt-BR//webmasters/docs/search-engine-optimization-starter-guide.pdf)
+
+[http://www.bing.com/toolbox/webmaster](http://www.bing.com/toolbox/webmaster)
+
+[https://developers.google.com/speed/pagespeed/insights/](https://developers.google.com/speed/pagespeed/insights/)

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "SEO Tools and tips"
-date:   2016-10-06 00:00:00
+date:   2016-10-07 00:00:00
 categories: SEO google tools
 ---
 

@@ -7,6 +7,8 @@ categories: spring springboot h2 console database
 
 In this post how to to setup H2 database with web console on spring boot.
 
+This is a good feature / database for development. Remember to remove this in production!
+
 ### Setup
 
 First, lets add some dependencies in the pom.xml

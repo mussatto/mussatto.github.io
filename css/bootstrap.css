@@ -246,6 +246,7 @@ th {
   }
   .navbar {
     display: none;
+    margin-bottom: 20px;
   }
   .btn > .caret,
   .dropup > .btn > .caret {
@@ -6898,4 +6899,10 @@ button.close {
 .panel-danger .panel-title,
 .panel-info .panel-title {
   color: #fff;
+}
+.blog-blackground{
+    background-color: #fbfbfb;
+}
+.page-content{
+    min-height:600px;
 }

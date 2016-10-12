@@ -83,7 +83,7 @@ gradle appengineRun
 ```
 or
 ```shell
-mvn appengine:devserver)
+mvn appengine:devserver
 ```
 
 Then check it on your browser: [link to localhost](http://localhost:8080/)

@@ -9,7 +9,6 @@ github_username:  mussatto
 linkedin_page: vitormussatto
 
 # Build settings
-markdown: kramdown
 highlighter: rouge
 paginate: 5
 gems: [jekyll-paginate,jekyll-coffeescript, jekyll-watch, jekyll-assets,jekyll-sitemap,jekyll-seo-tag]

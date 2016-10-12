@@ -7,7 +7,7 @@ categories: SEO google tools
 
 In this post I will list and write a couple of things about SEO, its tools and a few tips.
 
-Its a tutorial / brief list is to make the desired website be more likely to appear in search engines (google, bing, yahoo, etc)
+Its a tutorial / brief list to make the desired website be more likely to appear in search engines (google, bing, yahoo, etc)
 
 ### Google Search Console
 
@@ -17,7 +17,7 @@ Register and add your site in the console. This provides useful information abou
 
 ### Google Adsense
 
-Adsense is the most standard tool to generate revenue in websites. At least for the smaller ones.
+Adsense is a common tool to generate revenue in websites.
 
 Its not an SEO tool / topic, but google seems to like when google ads appear in your site.
 
@@ -25,7 +25,7 @@ Its not an SEO tool / topic, but google seems to like when google ads appear in 
 
 ### Load Javascript "later"
 
-Put all your Javascript in the bottom of the page, before the </body> tag.
+Put all your Javascript in the bottom of the page, just before closing the </body> tag.
 
 This optimizes the page load speed, user experience and most importantly: the search engine checks it for score
 
@@ -33,27 +33,27 @@ This optimizes the page load speed, user experience and most importantly: the se
 
 PageSpeed Insights is a great tool from google that analizes your site and tells you what to do and what to change to have a better rating.
 
-This rating influences search engine's priority. Higher numbers are better =)
+This rating influences search engine's priority (higher numbers are better)
 
 [Check PageSpeed Link](https://developers.google.com/speed/pagespeed/insights/)
 
 ### Google Analytics
 
-Google Analytics is the most common tool for checking your site's traffic.
+Google Analytics is the most / one of the most common tools for checking your site's traffic.
 
-Has a lot of cool features like being able to check which country your audience is from.
+Has a lot of cool features like being able to check the country from your audience.
 
 [Google Analytics Link](https://www.google.com/analytics/)
 
 ### Link all the tools
 
-In Adsense, Search Console and Analytics you have the option to link all the tools together. DO IT.
+In Adsense, Search Console and Analytics you have the option to link all the tools together.
 
 It links data, reforces the indexing and its a great way to see data.
 
 ### Bing Webmaster toolbox
 
-Bing's version of Google Search Console.
+Its Bing's version of Google Search Console.
 
 [Bing Webmaster toolbox Link](http://www.bing.com/toolbox/webmaster)
 
@@ -90,13 +90,14 @@ Google checks if there are real sites linking to your website (believe me, there
 More references are better - linkedin, github, etc
 
 [http://devall.com.br/](http://devall.com.br/)
+
 [http://alltop.com/](http://alltop.com/)
 
 ### Generate content
 
-This is probably the most difficult step: its an never ending effort, that requires extra care.
+This is the most difficult step: its an never ending effort that requires extra care.
 
-With more existing content in your website, its more likely to get users more often, and make them return.
+With more content in your website, its more likely to get users more often and make them return.
 
 Remember to pay extra attention to your title, keywords and content. Its good to have the same words of the title in the content. No one likes clickbaiters, especially google.
 

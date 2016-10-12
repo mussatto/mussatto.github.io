@@ -13,18 +13,18 @@ This is a good feature / database for development. Remember to remove this in pr
 
 First, lets add some dependencies in the pom.xml
 
-{% highlight xml %}
+```xml
 
 <dependency>
     <groupId>com.h2database</groupId>
     <artifactId>h2</artifactId>
 </dependency>
 
-{% endhighlight %}
+```
 
 Then lets add a new managed bean.
 
-{% highlight java %}
+```java
 
 @Bean
 public ServletRegistrationBean h2servletRegistration() {
@@ -33,11 +33,11 @@ public ServletRegistrationBean h2servletRegistration() {
     return registration;
 }
 
-{% endhighlight %}
+```
 
 Then the database's connection URI and login information in application.properties:
 
-{% highlight properties %}
+```properties
 
 spring.datasource.url=jdbc:h2:mem:AZ;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
 spring.datasource.driverClassName=org.h2.Driver
@@ -45,7 +45,7 @@ spring.datasource.username=sa
 spring.datasource.password=
 spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
 
-{% endhighlight %}
+```
 
 ### The code
 

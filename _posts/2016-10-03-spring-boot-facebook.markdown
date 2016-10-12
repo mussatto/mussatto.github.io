@@ -15,7 +15,7 @@ The project is a web application, with root context set to permitAll, showing a 
 
 This java class will contain the security config, and starts the spring boot application:
 
-{% highlight java %}
+```java
 
 package com.mussatto;
 
@@ -45,7 +45,7 @@ public class BoilerplateApplication  extends WebSecurityConfigurerAdapter {
     }
 }
 
-{% endhighlight %}
+```
 
 ### The Controllers
 
@@ -54,7 +54,7 @@ We configured in the BoilerplateApplication class three unsecured paths: /, /gre
 So lets create the controller that maps into the /greeting path:
 
 
-{% highlight java %}
+```java
 
 package com.mussatto.controller;
 
@@ -76,13 +76,13 @@ public class HelloController {
     }
 }
 
-{% endhighlight %}
+```
 
 ### Setting the OAuth2 application parameters
 
 Create a file in src/resources/application.yml with the values:
 
-{% highlight yaml %}
+```yaml
 security:
   oauth2:
     client:
@@ -95,15 +95,15 @@ security:
       clientAuthenticationScheme: form
     resource:
       userInfoUri: https://graph.facebook.com/me
-{% endhighlight %}
+```
 
 ### The tests
 
 Open a terminal and type the command:
 
-{% highlight shell %}
+```shell
 ~/dev/src/spring-boot-boilerplate $ mvn spring-boot:run
-{% endhighlight %}
+```
 
 When the server starts,  open up a browser and type in the links:
 

@@ -17,7 +17,7 @@ We will add two print to console commands in defer, just to see how the calls ar
 
 And then check it again in a loop.
 
-{% highlight go %}
+```go
 
 package golab
 
@@ -40,12 +40,12 @@ func defer2() {
 
 }
 
-{% endhighlight %}
+```
 
 
 ### The Test
 
-{% highlight go %}
+```go
 
 package golab
 
@@ -59,19 +59,19 @@ func TestDefer2(T *testing.T) {
 	defer2()
 }
 
-{% endhighlight %}
+```
 
 
 ### The Output
 
-{% highlight go %}
+```go
 /home/mussatto/dev/go-1.7/bin/go test -v github.com/mussatto/golab/defer -run ^TestDefer1$
 this is A
 this is B
 this is a second command in defer
 this is going to be printed after return
 ok  	github.com/mussatto/golab/defer	0.001s
-{% endhighlight %}
+```
 
 
 ### The code

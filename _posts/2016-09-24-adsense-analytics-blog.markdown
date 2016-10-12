@@ -12,7 +12,7 @@ In this post I will describe how I setup google analytics, google adsense and se
 
 Google Analytics allows you to track who is acessing your website.
 
-Go to [https://analytics.google.com/analytics/web/](https://analytics.google.com/analytics/web/), login and add a new account. Its in Admin, accounts -> create new account.
+Go to [Google Analytics Website](https://analytics.google.com/analytics/web/), login and add a new account. Its in Admin, accounts -> create new account.
 
 Then grab your tracking code, and put it somewhere in your page.
 
@@ -25,7 +25,7 @@ After a couple of minutes you should be able to see that you have been confirmed
 
 Google Adsense allows you to create ads / publicity in order to have monetization (money) when users click on it.
 
-Go to [http://www.google.be/adsense/start](http://www.google.be/adsense/start) and login.
+Go to [Google Adsense Website](http://www.google.be/adsense/start) and login.
 
 Click on "My ads", and "+ New ad unit".
 

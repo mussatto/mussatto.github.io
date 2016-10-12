@@ -13,7 +13,7 @@ In this example we will define a function that does some work with data, and the
 
 ### The setup
 
-{% highlight go %}
+```go
 
 package abstraction
 
@@ -28,12 +28,12 @@ func Work(data []int, callback AfterWorkCallback){
 	callback(data)
 }
 
-{% endhighlight %}
+```
 
 
 ### The test
 
-{% highlight go %}
+```go
 
 func Print(data []int) string {
 	fmt.Println("data is: " + fmt.Sprint(data))
@@ -58,11 +58,11 @@ func PrintReverse(data []int) string {
 	return responseString
 }
 
-{% endhighlight %}
+```
 
 function_test.go:
 
-{% highlight go %}
+```go
 
 package abstraction
 
@@ -88,7 +88,7 @@ func TestWork(t *testing.T) {
 }
 
 
-{% endhighlight %}
+```
 
 
 ### The Code

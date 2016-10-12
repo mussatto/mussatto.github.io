@@ -9,18 +9,18 @@ I am using appengine + gradle + junit, and it took me a while to find the right 
 
 On gradle, the required libs are:
 
-{% highlight groovy %}
+```groovy
 dependencies {
   //...
   testCompile 'junit:junit:4.12'    
   testCompile 'com.google.appengine:appengine-testing:1.9.21'
   testCompile 'com.google.appengine:appengine-api-stubs:1.9.21'
 }
-{% endhighlight %}
+```
 
 A sample test:
 
-{% highlight java %}
+```java
 public class DAOTest {
 
   private final LocalServiceTestHelper helper =
@@ -46,4 +46,4 @@ public class DAOTest {
   }
 }
 
-{% endhighlight %}
+```

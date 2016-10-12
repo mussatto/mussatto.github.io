@@ -13,7 +13,7 @@ The main idea we for this sample is: an animal, a Dog and a Cat that behaves as 
 
 Here, we are defining which functions are required to a type to work as a Animal:
 
-{% highlight go %}
+```go
 
 package abstraction
 
@@ -23,13 +23,13 @@ type Animal interface {
 	Talk() string
 }
 
-{% endhighlight %}
+```
 
 ### The Dog
 
 In order to Dog to work as an Animal, the only thing you have to do is have the function with the same name (Talk), with the same parameters:
 
-{% highlight go %}
+```go
 
 type Dog struct {
 	name string
@@ -39,13 +39,13 @@ func (dog Dog) Talk() string{
 	return "woof woof"
 }
 
-{% endhighlight %}
+```
 
 ### The Cat
 
 The same for a cat:
 
-{% highlight go %}
+```go
 
 type Cat struct{
 	name string
@@ -55,13 +55,13 @@ func (cat Cat) Talk() string{
 	return "meow"
 }
 
-{% endhighlight %}
+```
 
 ### The test
 
 Lets instantiate a lot of Dogs and Cats, and see if Go allows us to use Dogs and Cats as Animal:
 
-{% highlight go %}
+```go
 
 func createAnimals() []Animal{
 	return []Animal{ Dog{"snoopy"}, Cat{"mousty"}, Dog{"rex"}, Cat{"garfield"}, Cat{"fat garfield"}, Dog{"toto"} }
@@ -73,11 +73,11 @@ func MakeAnimalsTalk(){
 	}
 }
 
-{% endhighlight %}
+```
 
 ### The test 2
 
-{% highlight go %}
+```go
 
 package abstraction
 
@@ -87,11 +87,11 @@ func TestMakeAnimalsTalk(t *testing.T) {
 	MakeAnimalsTalk()
 }
 
-{% endhighlight %}
+```
 
 ### The output
 
-{% highlight shell %}
+```shell
 
 /home/mussatto/dev/go-1.7/bin/go test -v github.com/mussatto/golab/abstraction -run ^TestMakeAnimalsTalk$
 woof woof
@@ -101,7 +101,7 @@ meow
 meow
 woof woof
 
-{% endhighlight %}
+```
 
 
 ### The Code

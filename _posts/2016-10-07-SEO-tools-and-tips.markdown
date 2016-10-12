@@ -13,7 +13,7 @@ Its a tutorial / brief list is to make the desired website be more likely to app
 
 Register and add your site in the console. This provides useful information about how many clicks and keywords are being used to send data to your website.
 
-[https://www.google.com/webmasters/](https://www.google.com/webmasters/)
+[Google Search Console Link](https://www.google.com/webmasters/)
 
 ### Google Adsense
 
@@ -21,7 +21,7 @@ Adsense is the most standard tool to generate revenue in websites. At least for 
 
 Its not an SEO tool / topic, but google seems to like when google ads appear in your site.
 
-[https://www.google.com/adsense/app](https://www.google.com/adsense/app)
+[Google Adsense Link](https://www.google.com/adsense/app)
 
 ### Load Javascript "later"
 
@@ -35,7 +35,7 @@ PageSpeed Insights is a great tool from google that analizes your site and tells
 
 This rating influences search engine's priority. Higher numbers are better =)
 
-[https://developers.google.com/speed/pagespeed/insights/](https://developers.google.com/speed/pagespeed/insights/)
+[Check PageSpeed Link](https://developers.google.com/speed/pagespeed/insights/)
 
 ### Google Analytics
 
@@ -43,7 +43,7 @@ Google Analytics is the most common tool for checking your site's traffic.
 
 Has a lot of cool features like being able to check which country your audience is from.
 
-[https://www.google.com/analytics/](https://www.google.com/analytics/)
+[Google Analytics Link](https://www.google.com/analytics/)
 
 ### Link all the tools
 
@@ -55,7 +55,7 @@ It links data, reforces the indexing and its a great way to see data.
 
 Bing's version of Google Search Console.
 
-[http://www.bing.com/toolbox/webmaster](http://www.bing.com/toolbox/webmaster)
+[Bing Webmaster toolbox Link](http://www.bing.com/toolbox/webmaster)
 
 ### Have a sitemap.xml
 
@@ -65,9 +65,9 @@ There are a few tools that creates this by default. In the case of this blog, I 
 
 In google search console there is an option to add the sitemap.xml - do it.
 
-[http://www.sitemaps.org/protocol.html](http://www.sitemaps.org/protocol.html)
+[Info Link](http://www.sitemaps.org/protocol.html)
 
-[https://en.wikipedia.org/wiki/Sitemaps](https://en.wikipedia.org/wiki/Sitemaps)
+[Info Link](https://en.wikipedia.org/wiki/Sitemaps)
 
 ### Meta tags
 

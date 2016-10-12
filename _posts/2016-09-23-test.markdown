@@ -10,7 +10,7 @@ In order to cover some basic features of golang, in this post I will provide a s
 If we want to test a go file:
 
 foo.go:
-{% highlight go %}
+```go
 
 package main
 
@@ -18,25 +18,25 @@ func PrintSum(a, b int){
   fmt.Printf("%v\n", a+b)
 }
 
-{% endhighlight %}
+```
 
 We need to create a new file, in the same package labeled:
 
 foo_test.go
 
 Then inside it, we create a function:
-{% highlight go %}
+```go
 
 func TestPrintSum(t *testing.T){
   PrintSum(1,2)
 }
 
-{% endhighlight %}
+```
 
 Then open a shell and type:
 
-{% highlight shell %}
+```shell
 $ go test
-{% endhighlight %}
+```
 
 And you should be able to see the test output.

@@ -7,7 +7,7 @@ categories: golang
 
 I have been working for a couple of months with golang and decided to create a post about my experience.
 
-My background: I have more experience with Java, and I usually created some ruby and scala scripts to help me automatize tasks.
+My background: I am experienced with Java, and I have the habit of crating ruby and scala scripts to help me automatize tasks.
 
 My considerations:
 
@@ -21,4 +21,4 @@ My considerations:
 -  Golang is compiled
 -  Golang is strong typed
 
-I took me a while to get productive with the language, and I was only able to feel how productive it can be after I changed back to Java for a while: suddenly Java felt *really* slow.
+It took me a while to get productive with the language, and I was only able to feel how productive it can be after I changed back to Java for a while: suddenly Java felt *really* slow.

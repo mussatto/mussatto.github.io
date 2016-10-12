@@ -11,7 +11,7 @@ The code will perform a long loop that appends some information in the current s
 
 ### The Setup
 
-{% highlight go %}
+```go
 
 package strings
 
@@ -35,11 +35,11 @@ func ConcatenateRight() string {
 	return buffer.String()
 }
 
-{% endhighlight %}
+```
 
 ### The test
 
-{% highlight go %}
+```go
 
 package strings
 
@@ -64,17 +64,17 @@ func TestConcatenate(t *testing.T) {
 }
 
 
-{% endhighlight %}
+```
 
 The Output:
 
-{% highlight shell %}
+```shell
 /home/mussatto/dev/go-1.7/bin/go test -v github.com/mussatto/golab/strings -run ^TestConcatenate$
 ConcatenateWrong - Elapsed time is 918.970641ms
 ConcatenateRight - Elapsed time is 12.987911ms
 ok  	github.com/mussatto/golab/strings	0.937s
 
-{% endhighlight %}
+```
 
 As we can see, there is a perceptive difference of performace when using there two different approachs (~920ms vs ~13ms)
 

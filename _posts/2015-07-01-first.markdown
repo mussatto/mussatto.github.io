@@ -6,7 +6,7 @@ categories: jekyll update
 ---
 This is my first post on github.io using jekyll!
 
-So far, its a great tool for developers to create blog, and mantain control in the layout
+So far its a great tool for developers to create blog, and mantain control in the layout
 
 I will try to customize the page layout later, and write a little bit about my considerations.
 

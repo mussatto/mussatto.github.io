@@ -15,7 +15,7 @@ In this post I will describe how I fixed this error in Ubuntu 14.04
 
 jEnv is an equivalent of rbenv for ruby. [http://www.jenv.be/](http://www.jenv.be/)
 
-{% highlight shell %}
+```shell
 
 git clone https://github.com/gcuisinier/jenv.git ~/.jenv
 
@@ -25,11 +25,11 @@ echo 'eval "$(jenv init -)"' >> ~/.bashrc
 
 jenv add /usr/lib/jvm/java-8-oracle
 
-{% endhighlight %}
+```
 
-Go to [http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+Go to [JDK 8 Download url](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
-And to [http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html)
+And to [JDK 7 Download url](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html)
 
 And download both versions.
 
@@ -37,7 +37,7 @@ In my case I downloaded them in /home/mussatto/dev/jdks/, and uncompressed them 
 
 Then we need to add the folder to jEnv:
 
-{% highlight shell %}
+```shell
 
 ~/dev/jdks $ tar -xvf jdk-7u80-linux-x64.tar.gz
 ~/dev/jdks $ tar -xvf jdk-8u102-linux-x64.tar.gz
@@ -45,30 +45,30 @@ Then we need to add the folder to jEnv:
 ~/dev/jdks $ jenv add /home/mussatto/dev/jdks/jdk1.7.0_80
 ~/dev/jdks $ jenv add /home/mussatto/dev/jdks/jdk1.8.0_102
 
-{% endhighlight %}
+```
 
 Then set to JDK 7
 
-{% highlight shell %}
+```shell
 
 jenv shell 1.7
 
-{% endhighlight %}
+```
 
 Then I am able to run:
 
-{% highlight shell %}
+```shell
 
 ~/dev/src/appengine_mussatto $ gradle appengineRun
 
-{% endhighlight %}
+```
 
 No errors should occur.
 
 
 ### (for reference) Full Stacktrace of the error in jdk 8:
 
-{% highlight shell %}
+```shell
 
 SEVERE: Compilation error
 org.eclipse.jdt.internal.compiler.classfmt.ClassFormatException
@@ -209,4 +209,4 @@ Stacktrace:
         at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:409)
         at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
 
-{% endhighlight %}
+```

@@ -24,7 +24,7 @@ Then in the JSP you read it using getAttribute:
 ### Example code
 
 RootServlet.java:
-{% highlight java %}
+```java
 
 package mussatto.servlet;
 
@@ -58,11 +58,11 @@ public class RootServlet extends HttpServlet {
     }
 }
 
-{% endhighlight %}
+```
 
 hello.jsp:
 
-{% highlight html %}
+```html
 
 <%-- //[START all]--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -79,7 +79,7 @@ hello.jsp:
 <%-- //[END all]--%>
 
 
-{% endhighlight %}
+```
 
 ### Helpful Links
 

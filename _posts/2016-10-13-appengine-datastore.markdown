@@ -1,11 +1,13 @@
 ---
 layout: post
 title:  "Java - AppEngine datastore + objectify"
-date:   2016-10-07 00:00:00
+date:   2016-10-13 00:00:00
 categories: java appengine datastore objectify tutorial
 ---
 
-This is a tutorial about how to setup objectify in a java google AppEngine project in order to access datastore.
+This is a tutorial about how to setup the objectify framework in a java google AppEngine project in order to access datastore in a Java + gradle project.
+
+An entity representing a Comment without relationships will be created.
 
 ### Add dependencies
 
@@ -70,6 +72,8 @@ public class Comment {
 
 ### Create a OfyService, and register the entities once
 
+For this, I used an static block to register only once the class.
+
 ```java
 
 import com.googlecode.objectify.Objectify;
@@ -108,10 +112,21 @@ In this servlet, I will read the JSON content, parse it and create the entity fr
 
 public class CommentServlet extends HttpServlet {
 
+    private static final Logger log = Logger.getLogger(CommentServlet.class.getName());
+
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
+        log.info("CommentServlet.doGet");
+        String postID = req.getParameter("postID");
+        log.info("CommentServlet.postID=" + postID);
         Util.addCorsHeader(resp);
-        List<Comment> comments = OfyService.ofy().load().type(Comment.class).order("-date").list();
+        List<Comment> comments;
+
+        if (postID != null && !postID.equals("")) {
+            comments = OfyService.ofy().load().type(Comment.class).filter("postID", postID).order("-date").list();
+        } else {
+            comments = OfyService.ofy().load().type(Comment.class).order("-date").list();
+        }
         resp.setContentType("application/json");
         PrintWriter writer = resp.getWriter();
         Gson gson = new Gson();
@@ -120,9 +135,10 @@ public class CommentServlet extends HttpServlet {
 
     @Override
     public void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
+        log.info("CommentServlet.doPost");
         String jsonPost = Util.readInputText(req);
 
-        Map<String, Object> result = new Gson().fromJson(jsonPost, Map.class);
+        Map result = new Gson().fromJson(jsonPost, Map.class);
 
         String author = (String) result.get("author");
         String text = (String) result.get("text");
@@ -134,10 +150,63 @@ public class CommentServlet extends HttpServlet {
         Util.responseOkJSON(resp);
     }
 
+    @Override
+    public void doOptions(HttpServletRequest req, HttpServletResponse resp)
+            throws ServletException, IOException {
+        log.info("CommentServlet.doOptions");
+        String origin = req.getHeader("Origin");
+        log.info("Origin:" + origin);
+        Util.addCorsHeader(resp);
+    }
+
 }
 
 ```
 
+Map the servlet
+
+```xml
+<servlet>
+   <servlet-name>comment</servlet-name>
+   <servlet-class>mussatto.servlet.CommentServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>comment</servlet-name>
+    <url-pattern>/comment</url-pattern>
+</servlet-mapping>
+```
+
+### The test code
+
+```java
+
+public class CommentServletIntegrationTest {
+
+    @Test
+    public void commentServletTest() {
+        Map<String, Object> params = new HashMap<>();
+
+        params.put("author", "Noel Rosa");
+        params.put("text", "com que roupa eu vou, pro samba que voce me convidou?");
+        params.put("postID", "123456");
+        JSONPost post = new JSONPost("http://localhost:8080/comment", params);
+
+        try {
+            post.doPost();
+        } catch (IOException e) {
+            System.out.println(e);
+            fail();
+        }
+
+        System.out.println(post.getResponseCode());
+
+        System.out.println(post.getResponse());
+    }
+
+}
+
+```
 ### The sample code
 
 [https://github.com/mussatto/mussatto_appengine](https://github.com/mussatto/mussatto_appengine)

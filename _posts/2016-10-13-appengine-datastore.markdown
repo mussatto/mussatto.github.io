@@ -13,6 +13,8 @@ An entity representing a Comment without relationships will be created.
 
 ### Add dependencies
 
+in build.gradle edit and add the dependencies:
+
 ```groovy
 
 compile group: 'com.googlecode.objectify', name: 'objectify', version: '5.1.13'

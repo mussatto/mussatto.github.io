@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Java - AppEngine Compilation error"
+title:  "AppEngine - Java Compilation error"
 date:   2016-10-07 00:00:00
 categories: appengine compilation error java
 ---

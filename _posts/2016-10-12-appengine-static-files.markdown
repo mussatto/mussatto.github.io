@@ -79,13 +79,17 @@ Edit it and add:
 ### Start the devserver
 
 ```shell
+
 gradle appengineRun
+
 ```
 
 or
 
 ```shell
+
 mvn appengine:devserver
+
 ```
 
 Then check it on your browser: [link to localhost](http://localhost:8080/)

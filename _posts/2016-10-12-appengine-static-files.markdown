@@ -81,7 +81,9 @@ Edit it and add:
 ```shell
 gradle appengineRun
 ```
+
 or
+
 ```shell
 mvn appengine:devserver
 ```

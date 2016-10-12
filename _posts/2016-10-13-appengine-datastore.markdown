@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Java - AppEngine datastore + objectify"
+title:  "AppEngine - java datastore + objectify"
 date:   2016-10-13 00:00:00
 categories: java appengine datastore objectify tutorial
 ---

@@ -5,6 +5,8 @@ date:   2016-10-13 00:00:00
 categories: java appengine datastore objectify tutorial
 ---
 
+Appengine and datastore is a great cloud provider to try out new projects. It supports Java, Python and Go and has a great free layer.
+
 This is a tutorial about how to setup the objectify framework in a java google AppEngine project in order to access datastore in a Java + gradle project.
 
 An entity representing a Comment without relationships will be created.

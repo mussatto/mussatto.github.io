@@ -123,7 +123,7 @@ public class ThreadStarter {
 
 ### Thread States
 
-Just for reference, I will add here the thread states:
+Just for reference, I am adding here the thread states:
 
 -  NEW - A thread that has not yet started is in this state.
 -  RUNNABLE - A thread executing in the Java virtual machine is in this state.

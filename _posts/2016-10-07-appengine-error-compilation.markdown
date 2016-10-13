@@ -7,13 +7,17 @@ categories: appengine compilation error java
 
 I was playing with AppEngine, and studying for the getParameter vs getAttribute post.
 
-An then an strange error occurred (stacktrace below). Checking around the internet, I found out that this happens because of the JDK version.
+An then an strange error occurred (stacktrace below). Searching, I found out that this happens because of the JDK version.
+
+Since I use JDK8 for another projects, my method was to use jEnv to quickly change between JKD versions.
 
 In this post I will describe how I fixed this error in Ubuntu 14.04
 
 ### Install jEnv
 
 jEnv is an equivalent of rbenv for ruby. [http://www.jenv.be/](http://www.jenv.be/)
+
+jEnv allows you to change between installed JDKs
 
 ```shell
 

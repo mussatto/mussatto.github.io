@@ -16,6 +16,19 @@
       </div>
 
       <div class="row">
+        {% if page.url %}
+        <div
+          class="fb-like"
+          data-href="http://mussatto.github.io/"
+          data-share="true"
+          data-width="450"
+          data-show-faces="true">
+        </div>
+        <div class="fb-share-button"
+          data-href="{{ page.url }}"
+          data-layout="button_count">
+        </div>
+        {% endif %}
         <div class="page-content">
         {{ content }}
         </div>
@@ -31,7 +44,11 @@
         (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
       </div>
-    </div>
+
+      {% if page.url %}
+      <div class="fb-comments" data-href="{{ page.url }}" data-numposts="5"></div>
+      {% endif %}
+      </div>
     {% include footer.html %}
 
     <script type="application/ld+json">
@@ -72,5 +89,22 @@
   <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl }}"/>
   <link rel="stylesheet" href="{{ "/css/custom.min.css" | prepend: site.baseurl }}"/>
   <link rel="stylesheet" href="{{ "/css/syntax.css" | prepend: site.baseurl }}"/>
+  <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1869036123327248',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
   </body>
 </html>

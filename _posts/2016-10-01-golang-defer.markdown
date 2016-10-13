@@ -75,8 +75,8 @@ ok  	github.com/mussatto/golab/defer	0.001s
 
 
 ### The code
-[https://github.com/mussatto/golab/tree/master/defer](https://github.com/mussatto/golab/tree/master/defer)
+[Github Link](https://github.com/mussatto/golab/tree/master/defer)
 
 ### Helpful links
 
-[https://blog.golang.org/defer-panic-and-recover](https://blog.golang.org/defer-panic-and-recover)
+[Golang Blog](https://blog.golang.org/defer-panic-and-recover)

@@ -78,7 +78,7 @@ ok  	github.com/mussatto/golab/strings	0.937s
 
 As we can see, there is a perceptive difference of performace when using there two different approachs (~920ms vs ~13ms)
 
-### WHY?
+### Analysis
 
 When we concatenate using the plus "+" operation, it instantiates (creates) a new variable with the concatenated value.
 
@@ -87,4 +87,5 @@ As the string grows, it becomes a costly operation to create / alloc / instantia
 With buffer.WriteString, the old variable is not destroyed and only the passed value is appended. Without the need to create the performace is better.
 
 ### The code
-[https://github.com/mussatto/golab/tree/master/strings](https://github.com/mussatto/golab/tree/master/strings)
+
+[Github Link](https://github.com/mussatto/golab/tree/master/strings)

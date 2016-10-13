@@ -29,4 +29,4 @@ Then login on [http://localhost:8080/secured](http://localhost:8080/secured) and
 
 ### The code
 
-[https://github.com/mussatto/spring-boot-boilerplate-oauth2](https://github.com/mussatto/spring-boot-boilerplate-oauth2)
+[Github Link](https://github.com/mussatto/spring-boot-boilerplate-oauth2)

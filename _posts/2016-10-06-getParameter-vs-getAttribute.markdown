@@ -83,10 +83,10 @@ hello.jsp:
 
 ### Helpful Links
 
-[http://docs.oracle.com/javaee/6/api/javax/servlet/http/HttpServletRequest.html](http://docs.oracle.com/javaee/6/api/javax/servlet/http/HttpServletRequest.html)
+[Oracle HttpServletRequest docl](http://docs.oracle.com/javaee/6/api/javax/servlet/http/HttpServletRequest.html)
 
 ### The code
 
-[https://github.com/mussatto/mussatto_appengine](https://github.com/mussatto/mussatto_appengine)
+[Github Link](https://github.com/mussatto/mussatto_appengine)
 
 PS: In case the build with gradle fails, check my next post (Appengine compilation error)

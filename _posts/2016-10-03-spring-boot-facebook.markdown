@@ -117,4 +117,4 @@ After you login, you will be able to see the hello message.
 
 ### The code
 
-[https://github.com/mussatto/spring-boot-boilerplate-oauth2](https://github.com/mussatto/spring-boot-boilerplate-oauth2)
+[Github Link](https://github.com/mussatto/spring-boot-boilerplate-oauth2)

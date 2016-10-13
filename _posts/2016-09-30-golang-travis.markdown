@@ -27,4 +27,6 @@ In my case, I clicked the button on the left of "mussatto/golab".
 Mainly, the thing to be done is add a file .travis.yml in the root of the git repository:
 
 
-[https://docs.travis-ci.com/user/languages/go/](https://docs.travis-ci.com/user/languages/go/)
+### Useful link
+
+[Travis Doc](https://docs.travis-ci.com/user/languages/go/)

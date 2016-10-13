@@ -96,4 +96,4 @@ Then check it on your browser: [link to localhost](http://localhost:8080/)
 
 ### Check the sample code here
 
-[https://github.com/mussatto/mussatto_appengine](https://github.com/mussatto/mussatto_appengine)
+[Link Here](https://github.com/mussatto/mussatto_appengine)

@@ -93,4 +93,4 @@ func TestWork(t *testing.T) {
 
 ### The Code
 
-Check the code in: [https://github.com/mussatto/golab/tree/master/abstraction](https://github.com/mussatto/golab/tree/master/abstraction)
+[Github Link](https://github.com/mussatto/golab/tree/master/abstraction)

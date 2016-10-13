@@ -49,4 +49,4 @@ spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
 
 ### The code
 
-[https://github.com/mussatto/spring-boot-boilerplate-oauth2](https://github.com/mussatto/spring-boot-boilerplate-oauth2)
+[Github Link](https://github.com/mussatto/spring-boot-boilerplate-oauth2)

@@ -105,14 +105,14 @@ Remember to pay extra attention to your title, keywords and content. Its good to
 
 Check this blog's source code if you want to compare things, and contact me if you have a new tip!
 
-[https://github.com/mussatto/mussatto.github.io](https://github.com/mussatto/mussatto.github.io)
+[Link to source code](https://github.com/mussatto/mussatto.github.io)
 
 ### Helpful links
 
-[https://support.google.com/webmasters/](https://support.google.com/webmasters/)
+[Google Webmasters](https://support.google.com/webmasters/)
 
 [Google SEO starter guide](https://static.googleusercontent.com/media/www.google.com/pt-BR//webmasters/docs/search-engine-optimization-starter-guide.pdf)
 
-[http://www.bing.com/toolbox/webmaster](http://www.bing.com/toolbox/webmaster)
+[Bing Webmaster](http://www.bing.com/toolbox/webmaster)
 
-[https://developers.google.com/speed/pagespeed/insights/](https://developers.google.com/speed/pagespeed/insights/)
+[Insights](https://developers.google.com/speed/pagespeed/insights/)

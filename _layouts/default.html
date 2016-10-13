@@ -45,8 +45,9 @@
         </script>
       </div>
 
-      {% if page.url %}
-      <div class="fb-comments" data-href="{{ page.url }}" data-numposts="5"></div>
+      {% if page.postid %}
+      <div id="comments" name="comments">
+      </div>
       {% endif %}
       </div>
     {% include footer.html %}
@@ -89,6 +90,7 @@
   <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl }}"/>
   <link rel="stylesheet" href="{{ "/css/custom.min.css" | prepend: site.baseurl }}"/>
   <link rel="stylesheet" href="{{ "/css/syntax.css" | prepend: site.baseurl }}"/>
+
   <script>
   window.fbAsyncInit = function() {
     FB.init({

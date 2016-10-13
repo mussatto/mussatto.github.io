@@ -53,11 +53,35 @@ public class SayHelloImplement implements Runnable{
 
 ```
 
+### Java 8 Lambda class
+
+This is a new feature / way to create a inner class that implements the Runnable interface.
+
+Does the same thing as the method above.
+
+```java
+
+Runnable task = () -> {
+    System.out.println("I am saying hello in a Java 8 style");
+};
+
+```
+
+Which is the same as:
+
+```java
+Runnable task = new Runnable() {
+    @Override
+    public void run() {
+        System.out.println("I am saying hello in a Java");
+    }
+};
+
+```
+
 ### Test code
 
 For the test code lets create a class with a main method that starts each implementation.
-
-Since we are doing this, lets also implement the Java 8 way of creating a Runnable using lambda classes.
 
 An attention point here is that we have to call the start method. If we call the run method its going to be a blocking call.
 
@@ -98,6 +122,8 @@ public class ThreadStarter {
 ```
 
 ### Thread States
+
+Just for reference, I will add here the thread states:
 
 -  NEW - A thread that has not yet started is in this state.
 -  RUNNABLE - A thread executing in the Java virtual machine is in this state.

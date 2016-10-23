@@ -23,7 +23,7 @@ Well, this happens:
   panic: interface conversion: interface is int, not string
 ```
 
-Pretty much, the program does a panic and the whole executable shuts exits and shutdown.
+The program does a panic and the whole executable exits and shutdown.
 
 Luckily, there is a safe / safer way to avoid system panic when casting in golanguage:
 
@@ -38,7 +38,7 @@ if (!ok) {
 }
 ```
 
-Now, if its not a string, an message will be printed in the console.
+Now, if its not a string, an message will be printed in the console or you can input a default value for it.
 
 Lets create a small test code to check the result:
 

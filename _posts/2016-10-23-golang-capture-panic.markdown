@@ -23,7 +23,7 @@ What happens in this case?
   panic: interface conversion: interface is int, not string
 ```
 
-And when this happens, your program crashes and shuts down. And this can be bad.
+And when this happens, your program crashes and shuts down. And this can be really bad depending on the situation.
 
 Golang has a recover command / function that allows you to capture this behaviour using a defer:
 

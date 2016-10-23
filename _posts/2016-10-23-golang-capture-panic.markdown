@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Golang - panic capture / recover"
-date:   2016-10-22 00:00:00
+date:   2016-10-23 00:00:00
 categories: golang go panic capture recover
 ---
 

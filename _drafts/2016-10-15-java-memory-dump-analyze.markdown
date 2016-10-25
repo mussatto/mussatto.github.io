@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "Java - Memory Dump Analyse"
+date:   2016-10-15 00:00:00
+categories: java memory dump analyse
+---
+
 Thread->
 create object with:
 string

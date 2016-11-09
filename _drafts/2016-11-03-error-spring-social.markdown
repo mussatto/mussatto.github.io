@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  "Java - Could not generate CGLIB subclass of class"
-date:   2016-10-15 00:00:00
-categories: java threads executors
+date:   2016-11-14 00:00:00
+categories: java cglib JdbcConnectionRepository spring social
 ---
 
 
-
+JdbcConnectionRepository
 
 ```bash
 2016-11-02 19:09:57.961 DEBUG 9899 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Could not complete request

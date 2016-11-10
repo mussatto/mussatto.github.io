@@ -11,7 +11,7 @@ Problem ocurred because I had mixed annotations on private attributes and public
 
 ### How to fix:
 
-Put all annotations on public getters instead of private attribute declaration
+Put all annotations on public getters instead of private attribute declaration or just put all annotations on private attributes and remove from public getters.
 
 ```java
 @OneToOne
@@ -36,7 +36,12 @@ public UserConnection getUserConnection() {
 org.hibernate.MappingException: Could not determine type for hibernate
 ```
 
-Reference
+### Sample code
+
+[Github Link](https://github.com/mussatto/spring-boot-jpa-login-boilerplate/tree/master/src/main/java/com/mussatto/model)
+
+
+### Stacktrace Reference
 
 ```shell
 2016-11-03 15:09:31.036 ERROR 29613 --- [           main] o.s.boot.SpringApplication               : Application startup failed

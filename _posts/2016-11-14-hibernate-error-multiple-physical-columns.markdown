@@ -1,15 +1,19 @@
 ---
 layout: post
 title:  "Java - Hibernate org.hibernate.DuplicateMappingException"
-date:   2016-11-06 00:00:00
+date:   2016-11-14 00:00:00
 categories: java hibernate error fix mapping
 ---
+
+### The exception
+
+This exception happens when there is one physical table mapping two or more logical table names.
 
 This happened to me because there where multiple @JoinColumns using the same column name (user_id)
 
 ### How to fix
 
-Set a different name for each one of the JoinColumns (defined in the name parameter):
+Set a different name for each one of the JoinColumns (defined in the name parameter in the annotation):
 
 ```java
 @OneToOne

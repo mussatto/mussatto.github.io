@@ -22,7 +22,7 @@ assertTrue(returnedList.get(2) == 4);
 
 ### Example 2 - get all ids from object
 
-```java customer.java
+```java
 package lab.j8;
 
 public class Customer {

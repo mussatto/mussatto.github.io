@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Java 8 - New Features : Lambda"
-date:   2017-06-05 22:00:00
+date:   2017-06-06 22:00:00
 categories: java 8 new features
 ---
 

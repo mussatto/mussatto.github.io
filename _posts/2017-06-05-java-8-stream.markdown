@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Java 8 - Stream / Get All Elements"
+title:  "Java 8 - Stream / Filter Elements"
 date:   2017-06-05 22:00:00
 categories: java 8 stream
 ---
@@ -23,6 +23,7 @@ assertTrue(returnedList.get(2) == 4);
 ### Example 2 - get all ids from object
 
 ```java
+
 package lab.j8;
 
 public class Customer {
@@ -61,10 +62,26 @@ List<Integer> filteredCustomersId = customers.stream().filter(c -> c.getId() % 2
 
 assertTrue(filteredCustomersId.size() > 0);
 assertTrue(filteredCustomersId.size() != 10);
-assertTrue(filteredCustomersId.size() == 6);
+assertTrue(filteredCustomersId.size() == 5);
 assertTrue(filteredCustomersId.get(0) == 0);
 assertTrue(filteredCustomersId.get(1) == 2);
 assertTrue(filteredCustomersId.get(2) == 4);
+```
+
+### Filter by two conditions
+
+```java
+List<Customer> listTest = DataFactory.createCustomers(10);
+List<Customer> returnedList = listTest
+        .stream()
+        .filter(i -> i.getId() % 2 == 0)
+        .filter(i -> i.getName().contains("2") || i.getName().contains("4"))
+        .collect(Collectors.toList());
+
+System.out.println(returnedList);
+assertTrue(returnedList.size() > 0);
+assertTrue(returnedList.size() != 10);
+assertTrue(returnedList.size() == 2);
 ```
 
 ### The code repo

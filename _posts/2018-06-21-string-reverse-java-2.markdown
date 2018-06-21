@@ -7,7 +7,7 @@ categories: java string reverse
 
 This is an alternate solution for reversing Strings in java
 
-The algorithm is the following:
+The algorithm:
 
 - Split the String into an array with all the characters
 - Iterate throught the array, starting from the last position and adding into a new string

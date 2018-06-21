@@ -7,7 +7,7 @@ categories: java string reverse
 
 Reverse a string is a common exercise and this is a simple Java solution
 
-The algorithm is the following:
+The algorithm is:
 
 - Split the String into an array with all the characters
 - Reverse the array

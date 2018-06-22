@@ -5,7 +5,7 @@ date:   2018-06-22 12:00:00
 categories: java string palindrome
 ---
 
-Another common Java exercise is to verify is a String is a Palindrome
+Another common Java exercise is to verify if a String is a Palindrome
 
 The algorithm is:
 

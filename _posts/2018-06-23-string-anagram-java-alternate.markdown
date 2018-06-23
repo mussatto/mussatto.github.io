@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Java - Anagram String"
+title:  "Java - Anagram String - Alternate Solution"
 date:   2018-06-23 13:00:00
 categories: java string anagram
 ---

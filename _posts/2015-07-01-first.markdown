@@ -4,7 +4,7 @@ title:  "First Post!"
 date:   2015-07-01 14:21:34
 categories: jekyll update
 facebook_comment: https://www.facebook.com/vitormussatto/posts/1611533719142900?comment_id=1611534279142844
-postid: jekyll_1
+
 ---
 This is my first post on github.io using jekyll!
 

@@ -3,14 +3,20 @@ layout: default
 ---
 <div class="home">
         {% for post in paginator.posts %}
-        <div class="panel panel-default panel-body">
+        <div class="panel panel-body">
             <div>
-                <span>
-                  <h2 style="text-align:left;float:left;"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-                  <h6 style="text-align:right;float:right;">{{ post.date | date: "%b %-d, %Y" }}</h6>
-                </span>
-                <hr style="clear:both;"/>
-                <span>{{ post.content | strip_html | truncatewords:100}}</span>
+                <div>
+                    <h2 style="text-align:left;">
+                        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                    </h2>
+                </div>
+            
+                <div>
+                    {{ post.content | strip_html | truncatewords:100}}
+                </div>
+                <div>
+                    <h6 style="text-align:right;">Posted on {{ post.date | date: "%b %-d, %Y" }}</h6>
+                </div>
             </div>
         </div>
         {% endfor %}

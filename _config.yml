@@ -11,4 +11,4 @@ linkedin_page: vitormussatto
 # Build settings
 highlighter: rouge
 paginate: 7
-plugins: [jekyll-paginate,jekyll-coffeescript, jekyll-watch, jekyll-sitemap,jekyll-seo-tag]
+plugins: [jekyll-paginate, jekyll-watch, jekyll-sitemap,jekyll-seo-tag]

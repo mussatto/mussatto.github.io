@@ -5,9 +5,9 @@ date:   2018-06-23 13:00:00
 categories: java string anagram
 ---
 
-This is an alternate solution when verifying if a String is an anagramam.
+This is an alternate solution when verifying if a String is an anagram.
 
-The algoritm:
+The algorithm:
 
 - For both Strings: Remove special characters (!,'.)
 - For both Strings: Split the String into array of characters

@@ -2,8 +2,8 @@
 title: VM Blog
 email: mussatto@gmail.com
 description: Vitor Mussatto's Blog
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://mussatto.github.io" # the base hostname & protocol for your site
+baseurl: ""
+url: "http://mussatto.github.io"
 twitter_username: vitormussatto
 github_username:  mussatto
 linkedin_page: vitormussatto
@@ -11,4 +11,4 @@ linkedin_page: vitormussatto
 # Build settings
 highlighter: rouge
 paginate: 7
-plugins: [jekyll-paginate,jekyll-coffeescript, jekyll-watch, jekyll-assets,jekyll-sitemap,jekyll-seo-tag]
+plugins: [jekyll-paginate,jekyll-coffeescript, jekyll-watch, jekyll-sitemap,jekyll-seo-tag]

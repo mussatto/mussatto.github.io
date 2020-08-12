@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "GoLanguage First Impressions"
+title:  "GoLang First Impressions"
 date:   2016-07-17 14:21:34
 categories: golang
 ---

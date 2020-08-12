@@ -10,34 +10,42 @@ Appending is a really common operation when programming, but how do we append tw
 Well, first lets try the regular way:
 
 ```go
+
 myStringSlice := []string{"first", "second", "third"}
 myStringSlice = append(myStringSlice, []string{"fourth", "fift"})
+
 ```
 
 This error pops up:
 
 ```shell
+
 cannot use []string literal (type []string) as type string in append
+
 ```
 
-Then how do we do this? We could iterate with a for, but it doesn't look nice.
+Then how do we do this? We could iterate with a for but it doesn't look nice.
 
-The alternative option is to append by adding the "..." syntax after the array / slice:
+The alternative option to append on arrays / slices is by adding the "..." syntax after the array / slice:
 
 ```go
+
 myStringSlice := []string{"first", "second", "third"}
 
 //ERROR!
 //myStringSlice = append(myStringSlice, []string{"fourth", "fift"})
 
 myStringSlice = append(myStringSlice, []string{"fourth", "fift"}...)
+
 myStringSlice = append(myStringSlice, "sixth", "seventh")
+
 fmt.Println(myStringSlice))
+
 ```
 
 ### Under the hood
 
-Pretty much "..." is syntax for variadic arguments in Go, aka it changes an slice into a multiple arguments in the function call
+"..." is syntax for variadic arguments in Go, aka it changes an slice into a multiple arguments in the function call
 
 ### The code
 

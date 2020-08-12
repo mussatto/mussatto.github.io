@@ -25,7 +25,7 @@ Well, this happens:
 
 The program does a panic and the whole executable exits and shutdown.
 
-Luckily, there is a safe / safer way to avoid system panic when casting in golanguage:
+Luckily, there is a safe / safer way to avoid system panic when casting in GoLang:
 
 ```go
 var firstVar interface{}

@@ -5,9 +5,9 @@ date:   2020-08-11 13:00:00
 categories: kotlin time elapsed
 ---
 
-From the series "Stuff I always forget how to do and have to google"
+# From the series "Stuff I always forget how to do and have to google"
 
-Calculate elapsed in millis in kotlin:
+## Calculate elapsed in millis in kotlin:
 
 ```kotlin
 
@@ -18,7 +18,7 @@ assertThat(elapsed).isGreaterThan(1000L)
 
 ```
 
-Calculate elapsed in seconds, nano seconds, milliseconds:
+## Calculate elapsed in seconds, nano seconds, milliseconds:
 
 ```kotlin
 val elapsed = measureTime {

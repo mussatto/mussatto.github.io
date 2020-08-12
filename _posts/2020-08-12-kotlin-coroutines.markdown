@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Kotlin - coroutines process list in parallel"
+title:  "Kotlin - coroutine channels"
 date:   2020-08-12 13:00:00
 categories: kotlin time elapsed
 ---
 
-From the series "Stuff I always forget how to do and have to google"
+# From the series "Stuff I always forget how to do and have to google"
 
-Processing a list in parallel on Kotlin using coroutines, using 2 threads:
+## Processing a list in parallel on Kotlin using coroutines, using 2 threads:
 
 Obs: Remember to close the context!
 
@@ -30,8 +30,7 @@ runBlocking {
 context.close()
 ```
 
-
-Processing list in parallel using coroutineScope instead runBlocking of and joining everything afterwards:
+## Processing list in parallel using coroutineScope instead runBlocking of and joining everything afterwards:
 
 Obs: suspend is necessary!
 
@@ -66,7 +65,7 @@ suspend fun processListWithCoroutineScope() {
 
 ```
 
-Perform Http Get with list in parallel with coroutines on Kotlin, using 7 threads:
+## Perform Http Get with list in parallel with coroutines on Kotlin, using 7 threads:
 
 ```kotlin
 val wordsToQuery = listOf( "kotlin", "coroutine", "banana", "apple", "something", "bol.com", "mussatto.github.io")
@@ -86,3 +85,5 @@ context.close()
 
 
 Source code: [Here](https://github.com/mussatto/kotlinlab/blob/master/src/test/kotlin/mussatto/lab/CoroutineLabTest.kt)
+
+===

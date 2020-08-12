@@ -1,13 +1,15 @@
 ---
 layout: post
-title:  "Kotlin - coroutines list in parallel"
+title:  "Kotlin - coroutines process list in parallel"
 date:   2020-08-12 13:00:00
 categories: kotlin time elapsed
 ---
 
-# DRAFT 
+From the series "Stuff I always forget how to do and have to google"
 
 Processing a list in parallel on Kotlin using coroutines, using 2 threads:
+
+Obs: Remember to close the context!
 
 ```kotlin
 val list = listOf("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O")
@@ -26,6 +28,42 @@ runBlocking {
     }
 }
 context.close()
+```
+
+
+Processing list in parallel using coroutineScope instead runBlocking of and joining everything afterwards:
+
+Obs: suspend is necessary!
+
+```kotlin
+
+suspend fun processListWithCoroutineScope() {
+    val list = listOf("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O")
+    val context = Executors.newFixedThreadPool(3).asCoroutineDispatcher()
+
+    coroutineScope {
+
+        val job = launch {
+            list.forEach {
+                launch(context) {
+                    val time = measureTimeMillis {
+                        delay(3000) // this frees up the thread to other tasks
+                        println("Finished $it - ${now()}")
+                    }
+
+                    println("$it took $time milliseconds")
+                }
+            }
+        }
+
+        job.join()
+    }
+
+    context.close()
+
+    println("Exit! But only after everything else finished.")
+}
+
 ```
 
 Perform Http Get with list in parallel with coroutines on Kotlin, using 7 threads:

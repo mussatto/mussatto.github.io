@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Kotlin - channels"
+title:  "Kotlin - coroutine channels"
 date:   2020-08-13 13:00:00
-categories: kotlin time elapsed
+categories: kotlin channel coroutine consumer queue
 ---
 
 From the series "Stuff I always forget how to do and have to google"

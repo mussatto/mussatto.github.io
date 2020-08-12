@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Kotlin - coroutine channels"
+title:  "Kotlin - coroutine "
 date:   2020-08-12 13:00:00
-categories: kotlin time elapsed
+categories: kotlin coroutine parallel list
 ---
 
 From the series "Stuff I always forget how to do and have to google"

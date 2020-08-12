@@ -7,7 +7,7 @@ categories: golang append arrays slices
 
 Appending is a really common operation when programming, but how do we append two arrays / slices in Golang?
 
-Well, first lets try the regular way:
+Well, first lets try it:
 
 ```go
 
@@ -16,7 +16,7 @@ myStringSlice = append(myStringSlice, []string{"fourth", "fift"})
 
 ```
 
-This error pops up:
+But this error pops up:
 
 ```shell
 
@@ -26,7 +26,7 @@ cannot use []string literal (type []string) as type string in append
 
 Then how do we do this? We could iterate with a for but it doesn't look nice.
 
-The alternative option to append on arrays / slices is by adding the "..." syntax after the array / slice:
+The alternative option to append on arrays / slices in GoLang is to add the "..." syntax after the array / slice:
 
 ```go
 

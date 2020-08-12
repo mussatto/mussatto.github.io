@@ -9,7 +9,7 @@ categories: java hibernate error fix mapping
 
 This exception happens when there is one physical table mapping two or more logical table names.
 
-This happened to me because there where multiple @JoinColumns using the same column name (user_id)
+This happened to me because there are multiple @JoinColumns using the same column name (user_id)
 
 ### How to fix
 

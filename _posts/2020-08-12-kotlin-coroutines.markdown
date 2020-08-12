@@ -7,10 +7,9 @@ categories: kotlin time elapsed
 
 # DRAFT 
 
-Processing a list in parallel on Kotlin using coroutines:
+Processing a list in parallel on Kotlin using coroutines, using 2 threads:
 
 ```kotlin
-
 val list = listOf("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O")
 val context = Executors.newFixedThreadPool(1).asCoroutineDispatcher()
 runBlocking {
@@ -18,6 +17,7 @@ runBlocking {
         launch(context) {
             val time = measureTimeMillis {
                 delay(3000) // this frees up the thread to other tasks
+                // Thread.sleep(3000) // this does NOT free up the thread to other tasks
                 println("Finished $it - ${now()}")
             }
 
@@ -26,7 +26,24 @@ runBlocking {
     }
 }
 context.close()
+```
 
+Perform Http Get with list in parallel with coroutines on Kotlin, using 7 threads:
+
+```kotlin
+val wordsToQuery = listOf( "kotlin", "coroutine", "banana", "apple", "something", "bol.com", "mussatto.github.io")
+val context = Executors.newFixedThreadPool(7).asCoroutineDispatcher()
+val client = HttpClient()
+runBlocking {
+    wordsToQuery.forEach {
+        launch(context) {
+            println("Started:${now()}")
+            val resp = client.get<String>("https://www.google.com/search?q=$it")
+            println("Finished:${now()}")
+        }
+    }
+}
+context.close()
 ```
 
 

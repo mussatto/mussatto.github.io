@@ -5,6 +5,8 @@ date:   2020-08-13 13:00:00
 categories: kotlin lists operations
 ---
 
+From the series "Stuff I always forget how to do and have to google"
+
 This is a small collection of useful list functions to use on Kotlin.
 
 ## Lists used in this examples

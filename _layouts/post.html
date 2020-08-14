@@ -13,13 +13,12 @@ layout: default
     </div>
   </div>
   <div>
-      <ul class="pagination">
+      
       {% if page.previous.url %}
-        <li><a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a></li>
+        <a class="previous" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
       {% endif %}
       {% if page.next.url %}
-        <li><a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a></li>
+        <a class="next" style="float: right" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
       {% endif %}
-    </ul>
   </div>
 </div>

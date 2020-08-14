@@ -5,7 +5,7 @@ date:   2020-08-13 13:00:00
 categories: kotlin channel coroutine consumer queue
 ---
 
-From the series "Stuff I always forget how to do and have to google"
+"Stuff I always forget how to do and have to google it"
 
 ## Step 1 - create channel reader or processor (in parallel)
 

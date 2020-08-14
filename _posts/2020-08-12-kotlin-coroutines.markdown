@@ -5,7 +5,7 @@ date:   2020-08-12 13:00:00
 categories: kotlin coroutine parallel list
 ---
 
-From the series "Stuff I always forget how to do and have to google"
+"Stuff I always forget how to do and have to google it"
 
 ## Processing a list in parallel on Kotlin using coroutines, using 2 threads:
 

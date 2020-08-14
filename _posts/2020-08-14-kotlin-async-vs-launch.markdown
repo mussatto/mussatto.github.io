@@ -5,6 +5,8 @@ date:   2020-08-13 13:00:00
 categories: kotlin async launch
 ---
 
+"Stuff I always forget how to do and have to google it"
+
 The main difference between async vs launch is that async can return a value and launch cannot
 
 ## On Async statement

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Kotlin - Spring MVC queueing requests with queue/channel"
+title:  "Kotlin - Spring MVC queueing requests with channel"
 date:   2020-08-16 13:00:00
 categories: kotlin spring mvc queue channel
 ---

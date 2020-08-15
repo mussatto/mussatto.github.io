@@ -7,22 +7,22 @@ categories: kotlin spring mvc queue channel
 
 ## Why?
 
-One common thing I have on my projects is when the application scales up, some kind of async processing needs to be done.
+One common thing I have on my projects is when the application scales up some kind of async processing needs to be done.
 
-The steps for this are usually  like this:
+The steps for this are usually:
 
-- I check the request for proper Authority and Roles
+- Check the request for proper Authority and Roles
 - Request is Validated
 - The request is put into some queue (JMS, RabbitMQ, Pubsub) and an uuid for this request is given to the client
 - Some other background process (or even application) reads from the queue and process it
 - The response is sent to a response queue
 - The client fetches the response using the uuid
 
-I aways hated is setting up the queueing system since it requires a lot of operation investment.
+I aways hated is setting up the queueing system since it requires a lot of operation investment. Setting up a dedicated server, choosing the queueing system, installing it, etc.
 
 In some workplaces/companies setting up this system could take MONTHS, even YEARS.
 
-I developed this simple POC just to see if it is possible to implement some dumb queue using channels.
+I decided to work on this simple POC just to see if it is possible to implement some dumb queue using channels.
 
 There are many downsides of this:
 - everything is in memory, if the system goes down you loose all the non processed messages!
@@ -72,7 +72,7 @@ class ChannelListenerBean(val channelComponent: ChannelComponent): InitializingB
 
 ```
 
-## Create the Controller that is receiving messages
+## Create the Controller to receive messages
 
 Yea, not really REST but this is good enough for testing.
 
@@ -107,7 +107,7 @@ You should see a couple of messages on the console stating "Message sent!", and 
 
 If you trigger the curl more than 5 times, you should see that the request is stuck for a while - this indicates that the "Queue" is full.
 
-## Tuning up by setting more readers / workers in parallel!
+## Tuning up by setting more readers / workers in parallel
 
 First create a class for workers and give it a name for tracing:
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Kotlin - lists operations"
-date:   2020-08-13 13:00:00
+date:   2020-08-15 13:00:00
 categories: kotlin lists operations
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Kotlin - async vs launch and returning value"
-date:   2020-08-13 13:00:00
+date:   2020-08-14 13:00:00
 categories: kotlin async launch
 ---
 

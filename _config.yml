@@ -1,7 +1,12 @@
 # Site settings
 title: VM Blog
+author: Vitor Mussatto
+lang: en_US
+image:  /favicon.ico
+type: blog
+tagline: Vitor's Blog and code index
 email: mussatto@gmail.com
-description: Vitor Mussatto's Blog
+description: VM Blog and reference code repository. This is a space to share a little bit of code that might help others.
 baseurl: ""
 url: "http://mussatto.github.io"
 twitter_username: vitormussatto

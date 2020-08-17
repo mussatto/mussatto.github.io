@@ -18,7 +18,7 @@ The steps for this are usually:
 - The response is sent to a response queue
 - The client fetches the response using the uuid
 
-I aways hated is setting up the queueing system since it requires a lot of operation investment. Setting up a dedicated server, choosing the queueing system, installing it, etc.
+I always hated is setting up the queueing system since it requires a lot of operation investment. Setting up a dedicated server, choosing the queueing system, installing it, etc.
 
 In some workplaces/companies setting up this system could take MONTHS, even YEARS.
 

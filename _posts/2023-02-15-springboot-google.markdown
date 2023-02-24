@@ -7,6 +7,7 @@ categories: java oauth google spring boot
 
 # Introduction  
 
+&nbsp;  
 
 Before we dive in, let's first understand what OAuth is and why it is important.
 
@@ -14,8 +15,11 @@ OAuth is an open standard for authorization that allows users to grant third-par
 
 Now, let's get started with integrating Spring Boot with Google OAuth authentication.
 
+&nbsp;  
+
 ## Set up a Google API Console Project  
-  
+
+&nbsp;  
 
 To use Google OAuth authentication, you need to set up a Google API Console project. Here's how:
 
@@ -27,13 +31,18 @@ To use Google OAuth authentication, you need to set up a Google API Console proj
 - Enter a name for the OAuth client ID and specify the authorized JavaScript origins and redirect URIs for your application.
 - Click on "Create" and you will see your client ID and client secret.
 
+&nbsp;  
+
 ##  Configure Spring Security  
   
+&nbsp;  
 
 Next, you need to configure Spring Security to use Google OAuth authentication. Here's how:
 
 Add the following dependencies to your Spring Boot project:  
-  
+
+&nbsp;  
+
 ```xml
 
 <dependency>
@@ -47,6 +56,8 @@ Add the following dependencies to your Spring Boot project:
 
 ```
 
+&nbsp;  
+
 Add the following properties to your application.properties file:  
 
 ``` bash
@@ -58,10 +69,14 @@ spring.security.oauth2.client.provider.google.issuer-uri=https://accounts.google
 spring.security.oauth2.client.provider.google.user-info-uri=https://www.googleapis.com/oauth2/v3/userinfo
 
 ```
-  
+
+&nbsp;  
+
 Replace *your-client-id* and *your-client-secret* with your actual client ID and client secret.
 
 Create a class that extends *WebSecurityConfigurerAdapter* and override the configure(HttpSecurity http) method. Here's an example:  
+
+&nbsp;  
 
 ```java
 
@@ -90,8 +105,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 This configuration allows unauthenticated access to the login page and static resources, requires authentication for all other requests, and sets up the OAuth2 login and logout handlers.  
 
+&nbsp;  
+
 ## Add a Login Page  
 
+&nbsp;  
 
 Finally, you need to add a login page to your application. Here's an example:
 
@@ -112,12 +130,15 @@ Finally, you need to add a login page to your application. Here's an example:
 
 ```
 
+&nbsp;  
+
 This login page contains a form that posts to the */login/oauth2/code/google* endpoint when the user clicks the **Login with Google** button.
 
 That's it! You have now integrated Spring Boot with Google OAuth authentication. When a user clicks the **Login with Google** button, they will be redirected to Google's authentication page. Once they log in, they will be redirected back to your application, and their information will be available in the OAuth2User object.
 
 Here's an example of how to retrieve the user's information in a Spring MVC controller:
 
+&nbsp;  
 
 ```java
 
@@ -131,14 +152,19 @@ public String getUserInfo(@AuthenticationPrincipal OAuth2User oauth2User) {
 
 This controller returns a message that greets the user by name.
 
+&nbsp;  
+
 # Persisting OAuth2User information  
   
+&nbsp;  
   
 To store the *OAuth2User* information in a database, you can use Spring Data JPA to persist the data. Here's how you can do it:
 
+&nbsp;  
 
 ## Add Spring Data JPA Dependency  
   
+&nbsp;  
   
 First, you need to add the Spring Data JPA dependency to your project's *pom.xml* file:
 
@@ -152,8 +178,11 @@ First, you need to add the Spring Data JPA dependency to your project's *pom.xml
 
 ```
 
+&nbsp;  
+
 ## Create a User Entity  
-  
+
+&nbsp;  
   
 Next, you need to create an entity class that maps to a database table. Here's an example:
 
@@ -184,9 +213,11 @@ public class User {
 
 This entity class represents a user with a name and email address.
 
+&nbsp;  
 
 ## Create a UserRepository Interface  
-  
+
+&nbsp;  
 
 Next, you need to create a repository interface that extends *JpaRepository*. This interface provides methods for CRUD operations on the *User* entity. Here's an example:
 
@@ -201,9 +232,11 @@ public interface UserRepository extends JpaRepository<User, Long> {
 
 This repository interface provides a method to find a user by email.
 
+&nbsp;  
 
 ## Save the User in the Database  
   
+&nbsp;  
 
 Finally, you can save the user information in the database in the *OAuth2UserService* implementation. Here's an example:
 
@@ -241,8 +274,10 @@ public class CustomOAuth2UserService extends DefaultOAuth2UserService {
 
 ```
 
+&nbsp;  
 
 This *CustomOAuth2UserService* extends the *DefaultOAuth2UserService* provided by Spring Security, and overrides the *loadUser()* method to save the user in the database if they don't exist already. It uses the *UserRepository* to find the user by email, and if not found, creates a new *User* entity and saves it in the database.
 
 That's it! You have now integrated Spring Boot with Google OAuth authentication and stored the user information in a database using Spring Data JPA.
 
+&nbsp;  

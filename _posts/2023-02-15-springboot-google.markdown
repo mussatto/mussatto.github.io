@@ -112,7 +112,7 @@ Finally, you need to add a login page to your application. Here's an example:
 
 ```
 
-his login page contains a form that posts to the */login/oauth2/code/google* endpoint when the user clicks the **Login with Google** button.
+This login page contains a form that posts to the */login/oauth2/code/google* endpoint when the user clicks the **Login with Google** button.
 
 That's it! You have now integrated Spring Boot with Google OAuth authentication. When a user clicks the **Login with Google** button, they will be redirected to Google's authentication page. Once they log in, they will be redirected back to your application, and their information will be available in the OAuth2User object.
 

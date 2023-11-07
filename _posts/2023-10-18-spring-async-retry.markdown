@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Spring Async Retry"
-date:   2023-02-18 13:00:00
+date:   2023-10-18 13:00:00
 categories: java spring async retry
 ---
   
